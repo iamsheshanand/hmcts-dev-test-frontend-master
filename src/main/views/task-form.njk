@@ -39,12 +39,7 @@
           name: "description",
           value: task.description,
           classes: "govuk-input--width-10",
-          disabled: isDisabled,
-          attributes: {
-    required: true,
-    maxlength: 100
-  },
-  errorMessage: error and error.field == "description" and { text: error.message }
+          disabled: isDisabled
         }) }}
         {% if not task %}
             {{ govukDateInput({
